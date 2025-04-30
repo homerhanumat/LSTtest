@@ -1,8 +1,8 @@
 # For the user's convenience, attach packages that are often used in the textbook
 
 pkgs_to_attach <- c("ggplot2", "dplyr")
-optional_packages <- c("mosaicData", "moderndive",
-                       "palmerpenguins")
+#optional_packages <- c("mosaicData", "moderndive", "palmerpenguins")
+optional_packages <- character()
 # if an optional package is installed, .onLoad() will attach it.
 add_to_attach <- function(pkg) {
   if (requireNamespace(pkg, quietly = TRUE))
